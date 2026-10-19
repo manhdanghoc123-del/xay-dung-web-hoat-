@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Phim Hoạt Hình Cho Trẻ Em</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header Cố Định (Fixed Header) -->
+    <header class="main-header">
+        <div class="logo">
+            <a href="#">🎬 <span>HoạtHìnhKids</span></a>
+        </div>
+        
+        <!-- Head-link: Các liên kết điều hướng -->
+        <nav class="head-link">
+            <a href="#home">Trang chủ</a>
+            <a href="#popular">Phim Xem Nhiều</a>
+            <a href="#latest">Mới Cập Nhật</a>
+            <a href="#about">Giới Thiệu</a>
+        </nav>
+    </header>
+
+    <!-- Content: Layout chính (Left Content + Right Content) -->
+    <div class="content-wrapper">
+        
+        <!-- Left Content: Menu danh sách video -->
+        <aside class="left-content">
+            <h3>Danh Sách Phim</h3>
+            <ul class="video-list">
+                <li class="active">
+                    <a href="#video-1">1. Phim Hoạt Hình Thuyết Minh HD</a>
+                </li>
+                <li>
+                    <a href="#video-2">2. Phim Hoạt Hình YouTube Nhúng</a>
+                </li>
+                <li>
+                    <a href="#video-3">3. Cuộc Phiêu Lưu Của Chú Thỏ</a>
+                </li>
+                <li>
+                    <a href="#video-4">4. Thế Giới Động Vật Vui Nhộn</a>
+                </li>
+            </ul>
+        </aside>
+
+        <!-- Right Content: Khu vực xem video chính -->
+        <main class="right-content">
+            <section class="video-player-container">
+                <h2>1. Phim Hoạt Hình Thuyết Minh (HTML5 Video)</h2>
+                <!-- Thẻ <video> sử dụng video mẫu chất lượng cao -->
+                <video controls poster="https://via.placeholder.com/800x450/3498db/ffffff?text=Xem+Phim+Hoat+Hinh">
+                    <source src="https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4" type="video/mp4">
+                    Trình duyệt của bạn không hỗ trợ phát video HTML5.
+                </video>
+            </section>
+
+            <section class="video-player-container" style="margin-top: 30px;">
+                <h2>2. Nhúng Video từ YouTube (<iframe>)</h2>
+                <!-- Nhúng Video YouTube chất lượng cao, không quảng cáo/tự chuyển -->
+                <div class="iframe-responsive">
+                    <iframe 
+                        src="https://www.youtube.com/embed/dQw4w9WgXcQ" 
+                        title="YouTube video player" 
+                        frameborder="0" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                        allowfullscreen>
+                    </iframe>
+                </div>
+            </section>
+        </main>
+
+    </div>
+
+    <!-- Footer: Thông tin bản quyền -->
+    <footer class="main-footer">
+        <p>&copy; 2026 HoạtHìnhKids - Website Phim Hoạt Hình An Toàn Cho Trẻ Em. Mọi quyền được bảo lưu.</p>
+    </footer>
+
+</body>
+</html>
